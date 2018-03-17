@@ -1,3 +1,87 @@
+/* index.html */
+
+.welcome-block{
+  height: 350px;
+  width: 400px;
+  /* border: 1px solid #ccc; */
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
+}
+
+.welcome{
+  background: #f9f9f9;
+  height: 200px;
+  width: 380px;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  border-radius: 0 0 30px 30px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-block__avatar{
+  height: 125px;
+  width: 125px;
+  margin: 0 135px;
+  border: 5px solid #efefef;
+  border-radius: 125px;
+  overflow: hidden;
+  position: relative;
+  top: 60px;
+
+}
+
+.welcome__username{
+  text-align: center;
+  padding: 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #5f5f5f;
+  margin: auto;
+  min-width: 50px;
+  max-width: 350px;
+  /* border: 1px solid #ccc; */
+}
+
+.welcome__empty{
+  height: 70px;
+}
+
+.welcome__button{
+  height: 50px;
+  width: 350px;
+  margin: 0 auto;
+  padding: 0 10px;
+  text-align: center;
+  /* border: 1px solid #ccc; */
+  position: relative;
+  top: 20px;
+}
+
+.welcome__button__a{
+  height: 50px;
+  width: 200px;
+  text-decoration: none;
+  outline: none;
+  background: #f9f9f9;
+  border: 2px solid #56aaff;
+  border-radius: 30px;
+  position: relative;
+  top: 10px;
+  padding: 10px 50px;
+  color: #56aaff;
+  font-weight: bold;
+  transition: all 0.5s;
+
+}
+
+.welcome__button__a:hover{
+  background: #56aaff;
+  color: #fff;
+}
+
+/* main page */
+
 .header{
   height: 70px;
   width: 100%;
@@ -13,7 +97,7 @@
   /* border: 2px solid #ccc; */
   border-radius: 5px;
   box-sizing: content-box;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .user__avatar{
@@ -24,16 +108,18 @@
   border: 1px solid white;
   border-radius: 50px;
   overflow: hidden;
+  position: relative;
+  top: 3px;
 }
 
 .user__username{
   display: inline-block;
   padding: 5px 0px;
-  font-size: 17px;
+  /* font-size: 17px; */
   font-weight: bold;
   color: #5f5f5f;
   min-width: 50px;
-  max-width: 200px;
+  max-width: 500px;
 }
 
 .username-p{
@@ -133,6 +219,7 @@
   outline: none;
   font-size: 18px;
   position: static;
+  min-height: 50px;
 }
 
 .nav-list-link:hover{
@@ -170,11 +257,12 @@
 }
 
 .info__headline{
-  width: 350px;
+  width: 365px;
   text-align: right;
   color: #2c2c2c;
   height: 5px;
   text-shadow: 0 0px 1px #8f8f8f;
+
 }
 
 .info__avatar-box{
@@ -182,7 +270,8 @@
   display: inline-block;
   width: 150px;
   height: 150px;
-  border: 2px solid #9c9c9c;
+  border: 2px solid #efefef;
+  /* #9c9c9c */
   border-radius: 50%;
   overflow: hidden;
   transition: all 0.5s;
@@ -211,9 +300,18 @@
   border-radius: 10px;
   overflow: scroll;
   padding: 10px;
+  margin: 10px 0;
   line-height: 1.6;
   color: #2c2c2c;
-  font-size: 16px;
+  font-size: 18px;
+}
+
+.info__about-text p:first-of-type{
+  margin: 0;
+}
+
+.info__about-text p:last-of-type{
+  margin: 25px 0 0 0;
 }
 
 .download-button-block{
@@ -221,6 +319,8 @@
   float: right;
   padding: 20px 0px 0px 0px;
   overflow: hidden;
+  position: relative;
+  top: 10px;
 }
 
 .download-button{
@@ -248,6 +348,6 @@
 }
 
 .download-button-link:hover{
-  border-width: medium;
-  font-size: 18px;
+  color: #fff;
+  background: #56aaff;
 }
