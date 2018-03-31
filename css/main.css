@@ -44,7 +44,7 @@
 }
 
 .welcome__empty{
-  height: 70px;
+  height: 40%;
 }
 
 .welcome__button{
@@ -87,7 +87,8 @@
   width: 100%;
   background-color: #F9F9F9;
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+  overflow: visible;
+  z-index: 2000;
 }
 
 .main-content{
@@ -152,7 +153,38 @@
   /* border: 1px solid #ccc; */
   width: 30%;
   height: 60px;
-  text-align: right;
+  text-align: center;
+}
+
+@keyframes toolbar_slide {
+  from {height: 0px;}
+  to   {height: 113.5px;}
+}
+
+.contacts__dropdown{
+  min-width: 100px;
+  max-width: 300px;
+  max-height: 600px;
+  height: 0px;
+  z-index: 5000;
+  position: relative;
+  border: 2px solid #bbb;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 5px 10px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.contacts:hover .contacts__dropdown{
+  animation-name: toolbar_slide;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-direction: normal;
+}
+
+.contacts__dropdown__ul li{
+ display: block;
 }
 
 .contacts{
@@ -161,6 +193,11 @@
   padding: 25px;
   width: 100px;
   margin: 0 100px;
+
+}
+
+.contacts__list{
+  /* border: 2px dotted #ccc; */
 }
 
 .footer__left{
@@ -419,6 +456,7 @@
   border-left: 2px solid #56aaff;
   background: #bfdeff;
   border-radius: 2px;
+  transition: all 0.5s;
 }
 
 .years-block__line__ul li{
@@ -436,6 +474,7 @@
   color: #fff;
   font-weight: bold;
   border-radius: 2px;
+  transition: all 0.3s;
 
 }
 
