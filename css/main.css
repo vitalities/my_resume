@@ -165,22 +165,26 @@
   min-width: 100px;
   max-width: 300px;
   max-height: 600px;
-  height: 0px;
+  /* height: 0px; */
   z-index: 5000;
   position: relative;
-  border: 2px solid #bbb;
+  border: 2px solid #c9c9c9;
+  border-top: 0px;
   background: #f9f9f9;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   padding: 5px 10px;
   overflow: hidden;
-  transition: all 1s;
+  /* transition: all 1s; */
+  right: 10px;
+  top: 22px;
+  /* box-shadow: 0px 5px 5px #ccc; */
 }
 
-.contacts:hover .contacts__dropdown{
-  animation-name: toolbar_slide;
-  animation-timing-function: ease;
-  animation-duration: 1s;
-  animation-direction: normal;
+.contacts__dropdown-item__info{
+  font-weight: bold;
+  color: #56aaff;
+  line-height: 2;
+  font-size: 17px;
 }
 
 .contacts__dropdown__ul li{
@@ -478,7 +482,7 @@
 
 }
 
-.info__carrer__photo{
+.info__career__photo{
   /* border: 1px solid black; */
   display: inline-block;
   height: 275px;
@@ -488,19 +492,19 @@
   padding: 0 20px;
 }
 
-.info__carrer__photo__picture{
+.info__career__photo__picture{
   /* border: 3px solid #ccc; */
   overflow: hidden;
   height: 250px;
   width: 210px;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
-.info__carrer__about{
+.info__career__about{
   min-width: 300px;
 }
 
-.info__carrer__about-text{
+.info__career__about-text{
   overflow-y: auto;
   overflow-x: hidden;
   height: 250px;
