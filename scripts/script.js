@@ -5,23 +5,33 @@ $('.year_link').click(function() {
   $( this ).addClass('year_link__this-page');
 })
 
+var dropdownSlideUp = function() {
+  $('.contacts__dropdown').slideUp(250);
+}
+
 $('.year_2013').click(function() {
   careerChangeContent('careerPage_2013');
+  dropdownSlideUp();
 })
 $('.year_2014').click(function() {
   careerChangeContent('careerPage_2014');
+  dropdownSlideUp();
 })
 $('.year_2015').click(function() {
   careerChangeContent('careerPage_2015');
+  dropdownSlideUp();
 })
 $('.year_2016').click(function() {
   careerChangeContent('careerPage_2016');
+  dropdownSlideUp();
 })
 $('.year_2017').click(function() {
   careerChangeContent('careerPage_2017');
+  dropdownSlideUp();
 })
 $('.year_2018').click(function() {
   careerChangeContent('careerPage_2018');
+  dropdownSlideUp();
 })
 
 var careerChangeContent = function(careerPage_num) {
@@ -33,7 +43,7 @@ var careerChangeContent = function(careerPage_num) {
   var careerText_2017 = 'In voluptate velit esse  sunt in culpa qui officia deserunt mollit anim id est laborum. ';
   var careerText_2018 = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos facere iusto molestiae ab dolorum delectus exercitationem dicta quaerat. Accusantium sit nostrum veniam eligendi qui ipsa, cupiditate. Quae itaque, voluptatibus officia.';
   var careerImage = $('.info__career__photo__picture__img');
-  var careerText = $('.info__career__about-text');
+  var careerText = $('.info__career__about-text p');
   if (careerPage_num === 'careerPage_2013') {
     careerImage.attr('src','images/pictures/career_2013.jpg');
     careerText.text(careerText_2013);
@@ -60,6 +70,18 @@ var careerChangeContent = function(careerPage_num) {
   }
 }
 
-$('.contacts__list').click(function() {
-  $('.contacts__dropdown').slideToggle();
+$('body').click(function(evt) {
+  if (evt.target.id == 'dropdown') {
+    return;
+  } else {
+    dropdownSlideUp();
+  }
 })
+
+$('.contacts__list').click(function () {
+  var
+    duration = 500;
+  $('.contacts__dropdown').stop().slideToggle(duration);
+})
+
+$('.download-button a').click(dropdownSlideUp());

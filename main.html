@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/adjustment.css">
   <link rel="stylesheet" href="/css/adaptive.css">
-  <link rel="javascript" href="/java_scripts/script.js">
 </head>
 <body>
   <div class="main-block">
@@ -23,11 +22,11 @@
       </div>
       <div class="header__right">
         <div class="contacts">
-          <a href="#" class="contacts__list header__link">Contacts</a>
-    <div class="contacts__dropdown" hidden>
-      <ul class="contacts__dropdown__ul">
-        <li class="contacts__dropdown-item"><span class="contacts__dropdown-item__info">Phone </span><span class="contacts__dropdown-item__link">+7915029976</span></li>
-        <li class="contacts__dropdown-item"><span class="contacts__dropdown-item__info">Address </span><span class="contacts__dropdown-item__link"> USA, California</span></li>
+          <a href="#" class="contacts__list header__link" id="dropdown">Contacts</a>
+    <div class="contacts__dropdown" hidden id="dropdown">
+      <ul class="contacts__dropdown__ul" id="dropdown">
+        <li class="contacts__dropdown-item" id="dropdown"><span class="contacts__dropdown-item__info" id="dropdown">Phone </span><span class="contacts__dropdown-item__link" id="dropdown">+7915029976</span></li>
+        <li class="contacts__dropdown-item" id="dropdown"><span class="contacts__dropdown-item__info" id="dropdown">Address </span><span class="contacts__dropdown-item__link" id="dropdown"> USA, California</span></li>
       </ul>
     </div>
         </div>
@@ -59,7 +58,7 @@
           </div>
         <div class="download-button-block">
           <div class="download-button">
-            <a class="download-button-link" href="download/resume.txt" target="_blank" download >Download resume</a>
+            <a class="download-button-link" href="download/resume.txt" target="_blank" download>Download resume</a>
           </div>
         </div>
         </div>

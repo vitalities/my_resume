@@ -498,6 +498,12 @@
   height: 250px;
   width: 210px;
   border-radius: 10px;
+  border: 2px solid #efefef;
+  transition: all 0.5s;
+}
+
+.info__career__photo__picture:hover{
+  border-color: #56aaff;
 }
 
 .info__career__about{
