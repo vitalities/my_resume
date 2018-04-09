@@ -45,27 +45,27 @@ var careerChangeContent = function(careerPage_num) {
   var careerImage = $('.info__career__photo__picture__img');
   var careerText = $('.info__career__about-text p');
   if (careerPage_num === 'careerPage_2013') {
-    careerImage.attr('src','images/pictures/career_2013.jpg');
+    careerImage.attr('src','images/career/image_2013.jpg');
     careerText.text(careerText_2013);
   }
   if (careerPage_num === 'careerPage_2014') {
-    careerImage.attr('src','images/pictures/career_2014.jpg');
+    careerImage.attr('src','images/career/image_2014.jpg');
     careerText.text(careerText_2014);
   }
   if (careerPage_num === 'careerPage_2015') {
-    careerImage.attr('src','images/pictures/career_2015.jpg');
+    careerImage.attr('src','images/career/image_2015.jpg');
     careerText.text(careerText_2015);
   }
   if (careerPage_num === 'careerPage_2016') {
-    careerImage.attr('src','images/pictures/career_2016.jpg');
+    careerImage.attr('src','images/career/image_2016.jpg');
     careerText.text(careerText_2016);
   }
   if (careerPage_num === 'careerPage_2017') {
-    careerImage.attr('src','images/pictures/career_2017.jpg');
+    careerImage.attr('src','images/career/image_2017.jpg');
     careerText.text(careerText_2017);
   }
   if (careerPage_num === 'careerPage_2018') {
-    careerImage.attr('src','images/pictures/career_2018.jpg');
+    careerImage.attr('src','images/career/image_2018.jpg');
     careerText.text(careerText_2018);
   }
 }
@@ -85,3 +85,19 @@ $('.contacts__list').click(function () {
 })
 
 $('.download-button a').click(dropdownSlideUp());
+
+// PORTFOLIO
+
+var portfolio__block = $('.portfolio__block');
+
+portfolio__block.hover(function() {
+  var thisBlock = $(this);
+  var div = $('.portfolio__block__front-div');
+  var duration = 500;
+  thisBlock.find(div).stop().fadeIn(duration);
+}, function() {
+  var thisBlock = $(this);
+  var div = $('.portfolio__block__front-div');
+  var duration = 250;
+  thisBlock.find(div).stop().fadeOut(duration);
+})

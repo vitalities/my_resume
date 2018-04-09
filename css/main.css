@@ -6,10 +6,12 @@
   /* border: 1px solid #ccc; */
   margin: 0 auto;
   position: relative;
-  top: 100px;
+  /* top: 100px; */
+  padding-top: 5%;
 }
 
 .welcome{
+  display: inline-block;
   background: #f9f9f9;
   height: 200px;
   width: 380px;
@@ -535,4 +537,44 @@
 .info__headline-portfolio{
   width: 600px;
   text-align: center;
+}
+
+.info__portfolio-content{
+  padding: 10px 5px;
+}
+
+.portfolio__line{
+  text-align: center;
+}
+
+.portfolio__block{
+  display: inline-block;
+  height: 150px;
+  width: 250px;
+  /* border: 2px solid #ccc; */
+  border-radius: 5px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.portfolio__block__front-div{
+  height: 175px;
+  width: 250px;
+  background: rgb(86, 170, 255,0.7);
+  position: relative;
+  bottom: 178px;
+  text-align: center;
+}
+
+.portfolio__block__front-div h3{
+  color: #f8f8f8;
+  font-size: 22px;
+  position: relative;
+  top: 50px;
+}
+
+.portfolio__block__front-div p{
+  color: #f3f3f3;
+  position: relative;
+  top: 30px;
 }
