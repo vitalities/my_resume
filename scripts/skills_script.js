@@ -49,3 +49,50 @@ while (i == true) {
   console.log(height4);
   i = false;
 }
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function pbarsOpen() {
+  var
+    pbar1 = $('.filling-1');
+    pbar2 = $('.filling-2');
+    pbar3 = $('.filling-3');
+    pbar4 = $('.filling-4');
+    duration_pbar1 = getRandomInt(500,1500) ;
+    duration_pbar2 = getRandomInt(500,1500);
+    duration_pbar3 = getRandomInt(500,1500);
+    duration_pbar4 = getRandomInt(500,1500);
+
+  pbar1.slideDown(duration_pbar1);
+  pbar2.slideDown(duration_pbar2);
+  pbar3.slideDown(duration_pbar3);
+  pbar4.slideDown(duration_pbar4);
+}
+
+function PercentFadeIn() {
+  var
+    p1 = $('.skill-1');
+    p2 = $('.skill-2');
+    p3 = $('.skill-3');
+    p4 = $('.skill-4');
+    duration_p1 = duration_pbar1 + 100;
+    duration_p2 = duration_pbar2 + 100;
+    duration_p3 = duration_pbar3 + 100;
+    duration_p4 = duration_pbar4 + 100;
+
+  p1.slideDown(duration_p1);
+  p2.slideDown(duration_p2);
+  p3.slideDown(duration_p3);
+  p4.slideDown(duration_p4);
+
+  // p1.fadeIn(duration_p1);
+  // p2.fadeIn(duration_p2);
+  // p3.fadeIn(duration_p3);
+  // p4.fadeIn(duration_p4);
+
+}
+
+pbarsOpen();
+PercentFadeIn();
